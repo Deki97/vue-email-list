@@ -14,7 +14,7 @@
     <div id="root">
         <h1>Lista di indirizzi email generati:</h1>
 
-        <ul v-if="emailArray.length == 10">
+        <ul v-if="emailArray.length === emailArrayLength">
             <li v-for="mail in emailArray">
                 {{ mail }}
             </li>
