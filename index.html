@@ -12,7 +12,13 @@
 <body>
 
     <div id="root">
-        
+        <h1>Lista di indirizzi email generati:</h1>
+
+        <ul>
+            <li v-for="mail in emailArray">
+                {{ mail }}
+            </li>
+        </ul>
     </div>
     
     <script type="text/javascript" src="js/script.js"></script>
