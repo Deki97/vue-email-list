@@ -14,6 +14,8 @@
     <div id="root">
         <h1>Lista di indirizzi email generati:</h1>
 
+        <!-- Visualizzo le mail solo quando sono state tutte generate tramite un controllo v-if -->
+        <!-- Ovvero quando la lunghezza dell'array è uguale a 10, ossia al numero di mail generate -->
         <ul v-if="emailArray.length === emailArrayLength">
             <li v-for="mail in emailArray">
                 {{ mail }}
